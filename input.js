@@ -29,8 +29,8 @@ export function getInputDirection() {
 
 var container = document.querySelector('window');
 
-  window.addEventListener("touchstart", startTouch, false);
-  window.addEventListener("touchmove", moveTouch, false);
+  container.addEventListener("touchstart", startTouch, false);
+  container.addEventListener("touchmove", moveTouch, false);
 
   // Swipe Up / Down / Left / Right
   var initialX = null;
