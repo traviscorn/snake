@@ -64,6 +64,7 @@ var container = document.querySelector('window');
         inputDirection = { x: -1, y: 0 }
         break
         // swiped right
+      case (diffX < 0):
         if (lastInputDirection.x !== 0) break
         inputDirection = { x: 1, y: 0 }
         break; 
@@ -73,6 +74,7 @@ var container = document.querySelector('window');
         if (lastInputDirection.y !== 0) break
         inputDirection = { x: 0, y: -1 }
         break
+      case (diffY < 0):
         // swiped down
         if (lastInputDirection.y !== 0) break
         inputDirection = { x: 0, y: 1 }
