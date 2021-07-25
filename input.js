@@ -22,10 +22,7 @@ window.addEventListener('keydown', e => {
     }
 })
 
-export function getInputDirection() {
-    lastInputDirection = inputDirection
-    return inputDirection
-}
+
 
 var container = document.querySelector('body');
 
@@ -86,3 +83,8 @@ var container = document.querySelector('body');
 
     e.preventDefault();
   };
+
+export function getInputDirection() {
+    lastInputDirection = inputDirection
+    return inputDirection
+}
