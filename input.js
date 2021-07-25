@@ -66,6 +66,8 @@ var container = document.querySelector('body');
         inputDirection = { x: 1, y: 0 }
         break; 
       // sliding vertically
+    }
+    switch (Math.abs(diffY) > Math.abs(diffX)) {
       case (diffY > 0):
         // swiped up
         if (lastInputDirection.y !== 0) break
