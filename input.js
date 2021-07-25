@@ -27,7 +27,7 @@ export function getInputDirection() {
     return inputDirection
 }
 
-var container = document.querySelector('window');
+var container = document.querySelector('body');
 
   container.addEventListener("touchstart", startTouch, false);
   container.addEventListener("touchmove", moveTouch, false);
